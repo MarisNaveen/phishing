@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Email</title>
+    <script>
+        function redirectToPage() {
+            var email = document.getElementById("email").value;
+            if (email) {
+                // Redirect to another page (change the URL to your desired destination)
+                window.location.href = "file:///C:/Users/trans/Desktop/phishing.html"; // Replace with the URL of your desired webpage
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Please enter your email address:</h2>
+    <form onsubmit="event.preventDefault(); redirectToPage();">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
